@@ -46,3 +46,28 @@ const myFunct = function(){
 }
 
 console.log(typeof heros);
+
+
+//Stack(Primitive) , Heap(Non- Primitive)
+
+//1. Stack(Primitive)
+let myName = "Agrim"
+let anotherName = "Something Else"
+
+anotherName = "Changed"
+
+console.log(myName);
+console.log(anotherName);
+
+//2. Heap (Non-Primitive)
+let userOne = {
+    email : "agrim@gmail.com",
+    upi : "bjb@ubl"
+}
+let userTwo = userOne
+
+userTwo.email = "SomeOne@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
